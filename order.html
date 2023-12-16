@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .order-form {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        #payment-select{
+            width: 100%;
+            height: 6vh;
+        }
+    </style>
+    <title>Place Order</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="order-form">
+            <h2 class="text-center mb-4">Place Order</h2>
+
+            <!-- Product Information -->
+            <div class="form-group">
+                <label for="productName">Full Name</label>
+                <input type="text" class="form-control" id="productName" name="productName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Payment</label><br>
+               
+<select name="payment" id="payment-select">
+
+  <option value="UPI">UPI</option>
+  <option value="Net-banking">Net Banking</option>
+  <option value="Cash On Delivary">Cash On Delivary</option>
+  
+</select>
+            </div>
+
+            <!-- Shipping Information -->
+            <div class="form-group">
+                <label for="fullName">Contact Number</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <!-- Order Button -->
+            <button type="submit" class="btn btn-primary btn-block" onclick="myFunction()">Place Order</button>
+        </form>
+    </div>
+    <a href="index.html" target="_blank">
+    <button class="btn btn-primary btn-block">Back</button></a>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+  alert("You'r Order Is Placed");
+}
+    </script>
+</body>
+
+</html>

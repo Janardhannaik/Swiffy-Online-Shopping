@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Swiffy Login</title>
+</head>
+<body>
+
+<!-- HTML !-->
+
+
+    <div class="form-structor">
+        <div class="signup">
+            <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+            <div class="form-holder">
+                <input type="text" class="input" placeholder="Name" />
+                <input type="email" class="input" placeholder="Email" />
+                <input type="password" class="input" placeholder="Password" />
+            </div>
+            <a href="index.html">
+            <button class="submit-btn" onclick="clicked();">Sign up</button></a>
+        </div>
+        <div class="login slide-up">
+            <div class="center">
+                <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+                <div class="form-holder">
+                    <input type="email" class="input" placeholder="Email" />
+                    <input type="password" class="input" placeholder="Password" />
+                </div>
+                <a href="index.html">
+                <button class="submit-btn" onclick="myclick();">Log in</button></a>
+            </div>
+            
+        </div>
+      
+    </div>
+   
+    <script src="login.js"></script>
+    <script>
+        function clicked(){
+            alert("Succesf-fuly sign-in")
+        }
+        function myclick(){
+        
+            alert("Successfully Login in")
+        }
+    </script>
+  
+</body>
+</html>
