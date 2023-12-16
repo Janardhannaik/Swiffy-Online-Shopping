@@ -155,7 +155,7 @@ html{
   .cart-food-title{
      font-size: 1rem;
      text-transform: uppercase;
-     color:#ff6348;
+     color: var(--pink);
      font-weight: 500;
   }
   
