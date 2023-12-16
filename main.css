@@ -357,7 +357,7 @@ html{
   .cart-food-title{
      font-size: 1rem;
      text-transform: uppercase;
-     color:rgb(255,20,147);
+     color:var(--pink)!important;
      font-weight: 500;
   }
   
