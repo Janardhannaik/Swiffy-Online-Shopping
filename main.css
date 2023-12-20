@@ -103,7 +103,7 @@ html{
     border-color: transparent!important;
 }
 .add-cart{
-  background: #e5345b;
+  background: var(--pink)!important;
 }
 
  /* 
