@@ -102,6 +102,9 @@ html{
 .offers-content .btn{
     border-color: transparent!important;
 }
+.add-cart{
+  background: #e5345b;
+}
 
  /* 
  .add-cart{
